@@ -10,14 +10,14 @@ pipeline {
     }
 
     environment {
-        DOCKER_CREDENTIAL_ID = 'dockerhub-id'
-        GITHUB_CREDENTIAL_ID = 'github-id'
-        KUBECONFIG_CREDENTIAL_ID = 'dev-kubeconfig'
+        DOCKER_CREDENTIAL_ID = 'dockerhub-credentials'
+        GITHUB_CREDENTIAL_ID = 'github-credentials'
+        KUBECONFIG_CREDENTIAL_ID = 'kubeconfig-credentials'
         REGISTRY = 'docker.io'
         DOCKERHUB_NAMESPACE = 'qinqingkui'
         GITHUB_ACCOUNT = ' rarecrane'
         APP_NAME = 'devops-java-sample'
-        SONAR_CREDENTIAL_ID='sonarqube-id'
+        SONAR_CREDENTIAL_ID='sonarqube-credentials-text'
     }
 
     stages {
